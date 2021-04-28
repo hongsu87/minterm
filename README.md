@@ -252,4 +252,10 @@ public class StrassenAlgorithm {
 또한 위에서 측정한 연산 횟수 count값은 곱셈 연산 과정만 센 것으로, 실제로 Strassen 알고리즘을 짜기 위해 필요한 분할 등의 추가적인 과정은 포함하지 않은 것이다. 
 따라서 이론값으로는 Strassen 알고리즘이 일반적인 방법보다 항상 성능이 더 좋지만 내가 짠 코드는 그렇지 않았다.
 특정한 임계값을 정하여 행렬의 크기가 임계값보다 크고 (2^n) x (2^n)일 때만 Strassen 알고리즘을 적용하고 나머지의 경우에는 일반적인 방법을 통해 행렬 곱을 구하도록 코드를 수정하면 더 효율적인 코드가 될 것 같다.
-이렇게 하면 정사각행렬이 아닌 경우에도 행렬 곱을 구할 수 있을 것이다. 
+이렇게 하면 정사각행렬이 아닌 경우에도 행렬 곱을 구할 수 있을 것이다.    
+
+[참고자료1](https://ko.wikipedia.org/wiki/%EC%8A%88%ED%8A%B8%EB%9D%BC%EC%84%BC_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
+[참고자료2](http://contents.kocw.or.kr/KOCW/document/2014/Yeungnam/CHOHaengrae/112.pdf)
+[참고자료3](https://seungjuitmemo.tistory.com/80?category=909975)
+[참고자료4](https://gomlib.tistory.com/15)
+[참고자료5](https://rextester.com/discussion/QVW94237/Strassen-java)
